@@ -14,7 +14,6 @@ namespace Cilindro
             int a, r;
             double volume, areaS;
             string str;
-            const double pi = 3.1415926;
             // Pedir a altura do cilindro
             Console.WriteLine("Qual a altura do cilindro?");
             str = Console.ReadLine();
@@ -24,8 +23,8 @@ namespace Cilindro
             str = Console.ReadLine();
             r = Convert.ToInt32(str);
             // Calculos
-            volume = pi * (r * r) * a;
-            areaS = 2 * pi * r * (r + a);
+            volume = Math.PI * (r * r) * a;
+            areaS = 2 * Math.PI * r * (r + a);
             // Resultados
             Console.WriteLine("\nVolume = " + volume + "\n\nArea da Superficie = " + areaS + "\n");
         }
